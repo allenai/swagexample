@@ -1,0 +1,11 @@
+# blacklist everything then whitelist as necessary for better security
+**
+
+# whitelist necessary files
+!configs/
+!models/
+!swagexample/
+!Dockerfile
+!readme.md
+!requirements.txt
+!setup.py

@@ -1,0 +1,4 @@
+allennlp
+ipython
+torch
+torchvision
