@@ -1,23 +1,16 @@
-# Example model for the SWAG leaderboard powered by beaker
+# Example model for the SWAG leaderboard powered by Beaker
 
+# usage a base image that has python 3.6
 FROM library/python:3.6
 
-
 # set the working directory
-
 WORKDIR /code
 
-
 # install python packages
-
 ADD ./requirements.txt .
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
-RUN pip3.6 install --upgrade pip \
- && pip3.6 install -r requirements.txt
-
-
-# add files in addition to requirements.txt
-
+# add more files from the git repo into the docker image
 ADD configs/ .
 ADD models/ .
 ADD swagexample/ .
@@ -25,10 +18,8 @@ ADD Dockerfile .
 ADD setup.py .
 ADD readme.md .
 
-# pip install the swagexample package
-
-RUN pip3.6 install .
-
+# install the swagexample package inside the Docker image
+RUN pip install .
 
 # define the default command
 
