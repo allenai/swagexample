@@ -69,8 +69,8 @@ Feel free to file an issue on the [github repository][swagexample-repo].
 [pyenv]: https://github.com/pyenv/pyenv
 [pyenv-virtualenv]: https://github.com/pyenv/pyenv-virtualenv
 [python]: https://python.org
-[swag-leaderboard]: https://leaderboard.allenai.org/alexandria
-[swag-submissions]: https://leaderboard.allenai.org/alexandria/submissions
+[swag-leaderboard]: https://leaderboard.allenai.org/
+[swag-submissions]: https://leaderboard.allenai.org/submissions
 [swagexample-repo]: https://github.com/allenai/swagexample
 [train-data]: https://storage.googleapis.com/ai2-leaderboard/swag-train.csv
 [dev-data]: https://storage.googleapis.com/ai2-leaderboard/swag-dev.csv
